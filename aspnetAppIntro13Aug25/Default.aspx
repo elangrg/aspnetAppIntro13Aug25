@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="aspnetAppIntro13Aug25.Default" %>
+﻿<%@ Page Language="C#" UnobtrusiveValidationMode ="none"  AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="aspnetAppIntro13Aug25.Default" %>
 
 <!DOCTYPE html>
 
@@ -21,7 +21,7 @@
             
         
             <asp:TextBox ID="txtEmpName" runat="server"></asp:TextBox>
-           <%-- <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Emp Name is Required" ControlToValidate="txtEmpName"></asp:RequiredFieldValidator>--%>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Emp Name is Required" ControlToValidate="txtEmpName"></asp:RequiredFieldValidator>
             
             <asp:Button ID="btnSubmit" runat="server" Text="Click" OnClick="btnClick" />
         

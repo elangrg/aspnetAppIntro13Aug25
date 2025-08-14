@@ -5,6 +5,8 @@ VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aspnetAppIntro13Aug25", "aspnetAppIntro13Aug25\aspnetAppIntro13Aug25.csproj", "{6355218E-12BC-49B2-8FDB-5A3783405F66}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCAppEg", "MVCAppEg\MVCAppEg.csproj", "{AFE6EA86-7E3A-4551-BE21-BD756A347A50}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{6355218E-12BC-49B2-8FDB-5A3783405F66}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6355218E-12BC-49B2-8FDB-5A3783405F66}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6355218E-12BC-49B2-8FDB-5A3783405F66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFE6EA86-7E3A-4551-BE21-BD756A347A50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFE6EA86-7E3A-4551-BE21-BD756A347A50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFE6EA86-7E3A-4551-BE21-BD756A347A50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFE6EA86-7E3A-4551-BE21-BD756A347A50}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -17,13 +17,7 @@ namespace aspnetAppIntro13Aug25
                 cmbNames.Items.Add("Ganesh");
                 cmbNames.Items.Add("Mahesh");
                 cmbNames.Items.Add("Dinesh");
-                
-               
-
             }
-
-
-
 
 
         }
