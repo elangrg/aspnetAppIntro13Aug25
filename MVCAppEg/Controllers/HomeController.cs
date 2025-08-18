@@ -35,7 +35,7 @@ namespace MVCAppEg.Controllers
         // contentresult
         public Employee GetEmployee()
         {
-            return new Employee { EmpID=1000, EmpName="Ganesh" };
+            return new Employee { EmployeeID=1000, FirstName="Ganesh" };
         }
 
         // Emptyresult

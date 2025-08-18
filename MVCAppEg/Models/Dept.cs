@@ -12,14 +12,19 @@ namespace MVCAppEg.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Employee
+    public partial class Dept
     {
-        public int EmployeeID { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public decimal Salary { get; set; }
-        public int DeptID { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Dept()
+        {
+            this.Employees = new HashSet<Employee>();
+        }
     
-        public virtual Dept Dept { get; set; }
+        public int DeptID { get; set; }
+        public string DeptName { get; set; }
+        public string Location { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Employee> Employees { get; set; }
     }
 }

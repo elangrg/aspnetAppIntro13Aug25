@@ -22,7 +22,7 @@ namespace MVCAppEg.Infra
             return new Models.BookTitle
             {
                 Title = title,
-                DateOfPurchase = day + "/" + month + "/" + year
+                DateofPurchase = day + "/" + month + "/" + year
             };
         }
     }
