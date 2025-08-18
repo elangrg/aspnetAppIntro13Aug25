@@ -1,0 +1,38 @@
+﻿@model MVCAppEg.Models.BookTitle
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+
+    @{
+        ViewBag.Title = "Index";
+    }
+
+    <h2>Index</h2>
+
+
+
+    <form id="Home" action="" method="POST">
+        Book Title     <input id="BookTitle" name="Title" value="" type="text" /><br />
+        Day     <input id="Day" name="Day" value="" type="text" />
+        Month   <input id="Month" name="Month" value="" type="text" />
+        Year    <input id="Year" name="Year" value="" type="text" />
+        <input id="Submit" type="Submit" value="Submit" />
+    </form>
+
+
+
+
+
+    <div>
+        @Html.ActionLink("Back to List", "Index")
+    </div>
+
+
+</body>
+</html>

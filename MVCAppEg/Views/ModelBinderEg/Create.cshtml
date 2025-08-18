@@ -1,0 +1,35 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create</title>
+</head>
+<body>
+    <h2>Create</h2>
+    @using (Html.BeginForm())
+    {
+
+        <p>Where did you hear about our product?</p>
+
+        <ul>
+            <li>
+                <input id="ForJavascript" name="chksource" type="checkbox" value="newspaper" /> newspaper
+            </li>
+            <li>
+                <input name="chksource" type="checkbox" value="magazine" /> magazine
+            </li>
+            <li>
+                <input name="chksource" type="checkbox" value="web" /> website
+            </li>
+        </ul>
+
+        <input type="submit" value="Submit Survey" />
+    }
+</body>
+</html>

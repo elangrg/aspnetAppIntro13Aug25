@@ -1,3 +1,4 @@
+using MVCAppEg.Infra;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +14,11 @@ namespace MVCAppEg
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+
+
+            ModelBinders.Binders.Add(typeof(Models.BookTitle), new BookTitleCustomBinder());
+
+
         }
     }
 }
