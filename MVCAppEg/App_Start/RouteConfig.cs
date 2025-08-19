@@ -21,7 +21,7 @@ namespace MVCAppEg
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "employeedb", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "RazorViewEngine", action = "NestedLayoutContent", id = UrlParameter.Optional }
             );
         }
     }

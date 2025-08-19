@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <h1> Layout Main ....</h1>
+    <div>
+        @RenderBody()
+    </div>
+
+
+<footer>
+
+    @if (IsSectionDefined("Footer"))
+    {
+        <div> @RenderSection("Footer")  </div>
+    }
+    else
+    { 
+        <div> Layout Footer</div>
+    }
+
+
+</footer>
+
+
+    @RenderSection("Script",false )
+
+ 
+
+</body>
+</html>

@@ -122,8 +122,10 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\EmployeeController.cs" />
     <Compile Include="Controllers\EmployeeDbController.cs" />
+    <Compile Include="Controllers\EmployeesDBGenController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ModelBinderEgController.cs" />
+    <Compile Include="Controllers\RazorViewEngineController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -173,6 +175,19 @@
     <Content Include="Views\EmployeeDb\Index.cshtml" />
     <Content Include="Scripts\jquery-3.7.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.7.1.min.map" />
+    <Content Include="Views\EmployeesDBGen\Create.cshtml" />
+    <Content Include="Views\EmployeesDBGen\Delete.cshtml" />
+    <Content Include="Views\EmployeesDBGen\Details.cshtml" />
+    <Content Include="Views\EmployeesDBGen\Edit.cshtml" />
+    <Content Include="Views\EmployeesDBGen\Index.cshtml" />
+    <Content Include="Views\RazorViewEngine\BasicSyntaxIntro.cshtml" />
+    <Content Include="Views\Shared\_LayoutMain.cshtml" />
+    <Content Include="Views\RazorViewEngine\SimpleLayoutContent.cshtml" />
+    <Content Include="Views\RazorViewEngine\Index.cshtml" />
+    <Content Include="Views\Shared\_LayoutLevel0.cshtml" />
+    <Content Include="Views\Shared\_LayoutLevel1.cshtml" />
+    <Content Include="Views\Shared\_LayoutLevel2.cshtml" />
+    <Content Include="Views\RazorViewEngine\NestedLayoutContent.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

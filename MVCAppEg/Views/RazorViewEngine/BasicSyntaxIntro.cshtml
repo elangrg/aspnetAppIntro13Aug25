@@ -1,0 +1,72 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>BasicSyntaxIntro</title>
+
+</head>
+<body>
+    @{
+        string st = "Hello Razor View Engine!!!";
+
+        string msg = "<script>alert('Hacked!!!!!');</script>";
+
+        int i = 100;
+
+        <h1> some value ...</h1>
+
+        T Min<T>(T a, T b)
+        {
+            return a;
+        }
+    }
+
+
+
+    <h2> Implicit Expression ( @msg )</h2>
+    <h2> Implicit @@Expression  ( @Html.Raw(msg)  @Min(100, 200))</h2>
+    <h2> Elang@abc.com demo@abc  </h2>
+    <h2> Explicit Expression ( @(Min<int>(100, 200)) )</h2>
+    <h1> I@i I@(i) </h1>
+
+
+
+    @for (int cnt = 0; cnt < 10; cnt++)
+    {
+        <h3> Value of cnt is @cnt</h3>
+
+    }
+<div>
+
+    <p>
+
+        @{
+            List<string> lstNames = new List<string> { "Ganesh", "Mahesh" };
+            // Single Line
+            @: This is Some string
+
+            // multiple line Client Side
+            <text>
+                this
+                is
+                a
+                demo
+                abc
+            </text>
+
+
+        }
+    </p>
+
+</div>
+
+   
+
+</body>
+</html>
