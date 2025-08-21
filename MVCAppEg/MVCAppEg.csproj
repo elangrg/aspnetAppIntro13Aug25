@@ -151,10 +151,17 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ModelBinderEgController.cs" />
     <Compile Include="Controllers\RazorViewEngineController.cs" />
+    <Compile Include="Controllers\RoutingDemoCtlr\AdminController.cs" />
+    <Compile Include="Controllers\RoutingDemoCtlr\AttributeBasedRoutingEgController.cs" />
+    <Compile Include="Controllers\RoutingDemoCtlr\BlogController.cs" />
+    <Compile Include="Controllers\RoutingDemoCtlr\ProductController.cs" />
+    <Compile Include="Controllers\RoutingDemoCtlr\SortController.cs" />
+    <Compile Include="Controllers\StateManagementEgController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Infra\CustomModelBinders.cs" />
+    <Compile Include="Infra\CustomRouteConstraints.cs" />
     <Compile Include="Models\BookTitle.cs" />
     <Compile Include="Models\Dept.cs">
       <DependentUpon>EmployeeDbModel.tt</DependentUpon>
@@ -215,6 +222,11 @@
     <Content Include="Views\Shared\_LayoutLevel2.cshtml" />
     <Content Include="Views\RazorViewEngine\NestedLayoutContent.cshtml" />
     <Content Include="Views\RazorViewEngine\ValidationAndHTMLHelpersContent.cshtml" />
+    <Content Include="Views\Product\Insert.cshtml" />
+    <Content Include="Views\Admin\Index.cshtml" />
+    <Content Include="Views\AttributeBasedEg\Index.cshtml" />
+    <Content Include="Views\AttributeBasedEg\About.cshtml" />
+    <Content Include="Views\AttributeBasedEg\Contact.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -224,6 +236,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\AttributeBasedRoutingEg\" />
+    <Folder Include="Views\Blog\" />
+    <Folder Include="Views\Sort\" />
+    <Folder Include="Views\StateManagementEg\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
